@@ -5,8 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .column {
+          float: left;
+          width: 33.33%;
+          padding: 25px;
+          
+        }
+        
+        /* Clearfix (clear floats) */
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+    </style>
 </head>
 <body>
     <h1><center>Your data appear hear</center></h1>
+    <div>
+        <div class="row">
+            <div class="column">
+                <embed src="Python_UNIT_6_NOTES.pdf" type="application/pdf", height="500px", width="350px">
+            </div>
+            
+            <div class="column">
+                <embed src="Python_UNIT_6_NOTES.pdf" type="application/pdf", height="500px", width="350px">
+            </div>
+    
+            <div class="column">
+                <embed src="Python_UNIT_6_NOTES.pdf" type="application/pdf", height="500px", width="350px">
+            </div>
+        
+        </div>
+
+        
+   
 </body>
 </html>
